@@ -1,0 +1,77 @@
+@import '../../assets/scss/variables';
+.header {
+    &-bottom {
+        background-color: $black;
+        padding: 14px 0px;
+        color: $white;
+        font-size: $font-13;
+    }   
+}
+
+.header {
+    &-top {
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 6px;
+
+        .ht {
+            &-left {
+                width: 15%;
+
+                p {
+                    font-size: $font-13;
+                }
+
+                span {
+                    font-size: $font-10;
+                    font-style: italic;
+                }
+            }
+
+            &-center {
+                p {
+                    font-size: $font-10;
+                    margin-top: 5px;
+                    margin-left: -2px;
+                }
+            }
+
+            &-right {
+                width: 15%;
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                position: relative;
+
+                button {
+                    font-size: $font-10;
+                    display: flex;
+                    align-items: center;
+                    background: $black;
+                    color: $white;
+                    border: 0px;
+                    padding: 4px 10px;
+                    border-radius: 15px;
+                    position: absolute;
+                    top: -25px;
+                    right: 0;
+
+                    svg {
+                        font-size: 1.2rem;
+                        margin-right: 4px;
+                    }
+                }
+
+                p {
+                    font-size: $font-13;
+                }
+
+                span {
+                    font-size: 1rem;
+                    font-style: italic;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

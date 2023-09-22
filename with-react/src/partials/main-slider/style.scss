@@ -1,0 +1,63 @@
+@import '../../assets/scss/variables';
+section {
+    .main-slider {
+        position: relative;
+
+        .item {
+            p {
+                position: absolute;
+                bottom: 0;
+                padding: 15px;
+                background-color: rgba(0, 0, 0, .5);
+                color: white;
+                font-size: 40px;
+                width: 50%;
+                margin: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .owl-dots {
+            display: flex;
+
+            .owl-dot {
+                background-color: $black;
+                color: $white;
+                border-right: 1px solid #282828;
+
+                &:last-child {
+                    button {
+                        border-right: 0px;
+                    }
+                }
+
+                &.active {
+                    button {
+                        border-bottom: 5px solid red;
+                    }
+                }
+
+                button {
+                    padding: 15px 10px 10px !important;
+
+                    .rounded-circle {
+                        overflow: hidden;
+                        width: 46px;
+                        height: 46px;
+                        float: left;
+                        margin-right: 10px;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
+                    p {
+                        text-align: left;
+                        font-size: $font-15;
+                    }
+                }
+            }
+        }
+    }
+}

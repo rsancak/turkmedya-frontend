@@ -1,0 +1,17 @@
+@import '../../assets/scss/variables';
+nav {
+    margin: 20px 0px 15px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: $font-15;
+        font-weight: 700;
+
+        li {
+            &:last-child {
+                cursor: pointer;
+            }
+        }
+    }
+}

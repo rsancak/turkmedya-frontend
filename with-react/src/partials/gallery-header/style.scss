@@ -1,0 +1,16 @@
+@import '../../assets/scss/variables';
+.header {
+    &-gallery {
+        li {
+            margin-right: 12px;
+
+            a {
+                color: $white;
+
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
